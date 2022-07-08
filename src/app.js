@@ -1,8 +1,10 @@
-
+const dotenv = require('dotenv');
 const express = require('express');
 const hbs = require("hbs");
 const path = require("path");
 const app = express();
+
+dotenv.config({path: './config.env'});
 
 const weatherData = require('../utils/weatherData');
 
